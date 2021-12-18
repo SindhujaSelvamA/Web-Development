@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>register here</title>
+    <style>
+        *
+        {
+            margin: auto
+           
+        }
+        .div1
+
+        { padding: 5;
+            margin-left: 300px;
+            margin-right: 300px;
+             box-sizing: border-box;
+            background-color: rgb(226, 220, 220);
+            width: 700;
+            border: green;
+        }
+        h2{
+           position: relative;
+            margin:0px;
+            padding-inline-end: 25px;
+            padding-block: 25px;
+            display: block;
+        }
+   
+    </style>
+    
+    </head>
+    <body>
+        <div class="div1" width="700" height="1000">
+        <form>
+           
+            <table align="center" width="700" name=table >
+               <caption><h4> <i>Registeration form </i></h4></caption>
+               <div class="div2">
+                 <tr>
+                     <td>Username:</td>
+                     <td>
+                         <input type="text" name="txtname">
+                     </td>
+                 </tr>
+                    <tr>
+                        <td>password:</td>
+                        <td>
+                            <input type="password" name="pw">
+                        </td>
+                    </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td>
+                        <input type="number" name="txtname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                    <br>
+                    <input type="radio" name="Gender" value="male">Male
+                    <br>
+                    <input type="radio" name="Gender" value="female">female
+                    <br>
+                    <input type="radio" name="Gender" value="none">Prefer not to say
+                    <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Known Skills:</td>
+                    <td>
+                        <br>
+                       <input type="checkbox" name="tech" value="hc" />HTML & CSS
+                        <input type="checkbox" name="tech" value="js" />JAVASCRIPT
+                        <input type="checkbox" name="tech" value="php" />PHP
+                        <br /><br />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Email id:</td>
+                    <td>
+                    <br />
+                    <input type="email" />
+                    <br />
+                    </td>
+                </tr>
+                 
+                <tr>
+                    <td>Phone Number:</td>
+                    <td>
+                    <br />
+                    <input type="number" />
+                    <br />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Country:</td>
+                    <td>
+                        <br />
+                        <input list="countries" />
+                        <datalist id="countries">
+                            <option value="ind">India</option>
+                            <option value="ind">Indonesia</option>
+                            <option value="china">China</option>
+                            <option value="jp">japan</option>
+                            <option value="au">Australia</option>
+                            <option value="rs">Russia</option>
+                            <option value="mala">Malaysia</option>
+                            <option value="ind">Singapore</option>
+                            <option value="fr">France</option>
+                            <option value="sp">spain</option>
+                            <option value="can">canada</option>
+                            <option value="usa">United States of America</option>
+                            <option value="mex">Mexico</option>
+                            <option value="sa">Saudi Arabia</option>
+                            <option value="none">country not in the list</option>
+                        </datalist>
+                        
+                        <br />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>City lived in:</td>
+                    <td>
+                    <br />
+                    <select name="city" multiple>
+                        <option value="bgr">Bangalore</option>
+                        <option value="chennai">chennai</option>
+                        <option value="dl">Delhi</option>
+                        <option value="mb">Mumbai</option>
+                        <option value="kc">coimbatore</option>
+                        <option value="tr">Trichy</option>
+                    </select>
+                    
+                    <br />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Address:</td>
+                    <td>
+                        <br />
+                        <textarea cols="50" row="10"></textarea>
+                        <br />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td>
+                    <br />
+                    <input type="date" />
+                    <br /><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Time of Job Applied:</td>
+                    <br />
+                    <br />
+                    <td>
+                        <input type="text" name="job time">
+                    </td>
+                    <br />
+                </tr>
+
+                <tr>
+                    <td>Your favourite color:</td>
+                    <br />
+                    <br />
+                    <td>
+                        <input type="text" name="color">
+                        <br />
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload your Resumea:</td>
+                    
+                    <td>
+                        <input type="file" name="resumea">
+                       
+                    </td>
+                </tr>
+                <br />
+                <br />
+                <tr>
+                    <br />
+                    <br />
+                    <td colspan="2" align="center">
+                        <input type="submit" value="register">
+
+                    </td>
+                </tr>
+                
+                   </div>
+                </table>
+              
+            </div>
+     
+        </form>
+    </body>
+</html>

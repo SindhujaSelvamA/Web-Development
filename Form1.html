@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>REGISTERATION FORM</title>
+    <style>
+        #register
+        {
+            margin-left: 10px;
+            align-items: center;
+        }
+        .div1
+        {
+            display: inline-block;
+            text-align: center;
+        }
+        .table1
+        {
+            align-content: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>REGISTER HERE</h2>
+    <div class="div1" display="inline-block">
+    <form class="form">
+        
+        <table class="table1">
+            <h2>REGISTRATION FORM</h2>
+            Name:
+            <input type="text">
+            <br />
+            <br/>
+            Age:
+            <input type="number">
+            <br /><br />
+            Gender:
+            <br>
+            <input type="radio" name="Gender" value="male">Male
+            <br>
+            <input type="radio" name="Gender" value="female">female
+            <br>
+            <input type="radio" name="Gender" value="none">Prefer not to say
+            <br><br />
+            Known skills:
+            <br>
+            <input type="checkbox" name="tech" value="hc" />HTML & CSS
+            <input type="checkbox" name="tech" value="js" />JAVASCRIPT
+            <input type="checkbox" name="tech" value="php" />PHP
+            <br /><br />
+            Enter yr Mail id:
+            <br />
+            <input type="email" />
+            <br />
+            your phone no:
+            <br />
+            <input type="number" />
+            <br />
+            country:
+            <br />
+            <input list="countries" />
+            <datalist id="countries">
+                <option value="ind">India</option>
+                <option value="ind">Indonesia</option>
+                <option value="china">China</option>
+                <option value="jp">japan</option>
+                <option value="au">Australia</option>
+                <option value="rs">Russia</option>
+                <option value="mala">Malaysia</option>
+                <option value="ind">Singapore</option>
+                <option value="fr">France</option>
+                <option value="sp">spain</option>
+                <option value="can">canada</option>
+                <option value="usa">United States of America</option>
+                <option value="mex">Mexico</option>
+                <option value="sa">Saudi Arabia</option>
+                <option value="none">country not in the list</option>
+            </datalist>
+
+            <br />
+
+            city lived in:
+            <br />
+            <select name="city" multiple>
+                <option value="bgr">Bangalore</option>
+                <option value="chennai">chennai</option>
+                <option value="dl">Delhi</option>
+                <option value="mb">Mumbai</option>
+                <option value="kc">coimbatore</option>
+                <option value="tr">Trichy</option>
+            </select>
+
+            <br />
+            Address:
+            <br />
+            <textarea cols="50" row="10"></textarea>
+            <br />
+            DATE OF Birth<br />
+            <br />
+            <input type="date" />
+            <br /><br>
+            Time of Job-Applied:
+            <br />
+            <br />
+            <input type="datetime-local" />
+            <br /><br />
+            Your favourite color:
+            <br />
+            <br />
+            <input type="color" />
+            <br />
+            <br />
+            Upload your Resumea:
+            <br />
+            <br />
+            <input type="file" />
+        <br />
+            
+        </table>
+        </form>
+        </div>
+</body>
+
+</html>
