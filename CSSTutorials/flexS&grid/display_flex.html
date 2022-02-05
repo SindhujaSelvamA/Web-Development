@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        .container{
+            margin: 10px;
+        }
+        .container-item{
+         width: 70px;
+         line-height: 50px;
+         background: red;
+        margin: 10px;
+         text-align: center;
+        font-size: 35px;
+        color: white;
+        
+}
+    .container-flex{
+    display: flex;
+}
+        .container-col{
+            display: flex;
+           flex-direction: column-reverse;
+        }
+        .container-row-reverse{
+             display: flex;
+           flex-direction: row-reverse;
+        }
+.flex-end{
+              margin: 10px;
+              background-color: chartreuse;
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-end;
+          }
+.space-between{
+
+             margin: 10px;
+              background-color: chartreuse;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+}
+.space-around{
+       margin: 10px;
+              background-color: chartreuse;
+              display: flex;
+              flex-direction: row;
+              justify-content:space-around
+}
+
+.center{
+       margin: 10px;
+              background-color: chartreuse;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+           align-items: center;
+}
+
+.flex-start{
+      margin: 10px;
+              background-color: chartreuse;
+              display: flex;
+              flex-direction: row;
+              
+           align-items: flex-start;
+}
+.flex-end{
+      margin: 10px;
+              background-color: chartreuse;
+              display: flex;
+              flex-direction: row;
+           align-items: flex-end;
+}
+.stretch{
+      margin: 10px;
+              background-color: chartreuse;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: space-around;
+           align-items: stretch;
+           
+}
+
+.baseline{
+            margin: 10px;
+              background-color: chartreuse;
+              display: flex;
+              flex-direction: row;
+           align-items:baseline;
+           justify-content: space-around;
+}
+
+.allcenter
+{
+            margin: 10px;
+              background-color: chartreuse;
+              display: flex;
+              flex-direction: row;
+           align-items:center;
+           justify-content:center;}
+    </style>
+</head>
+
+<body>
+    <h2>I am normal display</h2>
+<div class="container">
+    <div class="container-item">A</div>
+    <div class="container-item">B</div>
+    <div class="container-item">C</div>
+    <div class="container-item">D</div>
+    <div class="container-item">E</div>
+</div>
+
+<h2>I am  display flex</h2>
+<div class="container-flex">
+    <div class="container-item">A</div>
+    <div class="container-item">B</div>
+    <div class="container-item">C</div>
+    <div class="container-item">D</div>
+    <div class="container-item">E</div>
+</div>
+
+<h2>I am flex-direction=column-reverse</h2>
+<div class="container-col">
+    <div class="container-item">A</div>
+    <div class="container-item">B</div>
+    <div class="container-item">C</div>
+    <div class="container-item">D</div>
+    <div class="container-item">E</div>
+</div>
+
+<h2>I am flex-direction=row-reverse</h2>
+<div class="container-row-reverse">
+    <div class="container-item">A</div>
+    <div class="container-item">B</div>
+    <div class="container-item">C</div>
+    <div class="container-item">D</div>
+    <div class="container-item">E</div>
+</div>
+
+<h2>I am justifycontent=flex-end</h2>
+<div class="flex-end">
+    <div class="container-item">A</div>
+    <div class="container-item">B</div>
+    <div class="container-item">C</div>
+    <div class="container-item">D</div>
+    <div class="container-item">E</div>
+</div>
+
+<h2>I am justifycontent=space-between</h2>
+<div class="space-between">
+    <div class="container-item">A</div>
+    <div class="container-item">B</div>
+    <div class="container-item">C</div>
+    <div class="container-item">D</div>
+    <div class="container-item">E</div>
+</div>
+
+<h2>I am justifycontent=space-around</h2>
+<div class="space-around">
+    <div class="container-item">A</div>
+    <div class="container-item">B</div>
+    <div class="container-item">C</div>
+    <div class="container-item">D</div>
+    <div class="container-item">E</div>
+</div>
+
+<h2>I am align-items=center</h2>
+<div class="center" style="height: 100px;">
+    <div class="container-item">A</div>
+    <div class="container-item">B</div>
+    <div class="container-item">C</div>
+    <div class="container-item">D</div>
+    <div class="container-item">E</div>
+</div>
+
+
+<h2>I am align-items=flex-start</h2>
+<div class="flex-start" style="height: 100px;">
+    <div class="container-item">A</div>
+    <div class="container-item">B</div>
+    <div class="container-item">C</div>
+    <div class="container-item">D</div>
+    <div class="container-item">E</div>
+</div>
+
+<h2>I am align-items=flex-end</h2>
+<div class="flex-end"style="height: 100px;">
+    <div class="container-item">A</div>
+    <div class="container-item">B</div>
+    <div class="container-item">C</div>
+    <div class="container-item">D</div>
+    <div class="container-item">E</div>
+</div>
+
+<h2>I am align-items=stretch</h2>
+<div class="stretch"style="height: 300px;">
+    <div class="container-item">A</div>
+    <div class="container-item">B</div>
+    <div class="container-item">C</div>
+    <div class="container-item">D</div>
+    <div class="container-item">E</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<h2>I am align-items=base-line</h2>
+<div class="baseline" style="height: 300px;">
+    <div class="container-item">A</div>
+    <div class="container-item">B</div>
+    <div class="container-item">C</div>
+    <div class="container-item">D</div>
+    <div class="container-item">E</div>
+</div>
+
+<h2>I am align-items=base-line</h2>
+<div class="allcenter" style="height: 300px;">
+    <div class="container-item">A</div>
+    <div class="container-item">B</div>
+    <div class="container-item">C</div>
+    <div class="container-item">D</div>
+    <div class="container-item">E</div>
+</div>
+
+</body>
+
+</html>

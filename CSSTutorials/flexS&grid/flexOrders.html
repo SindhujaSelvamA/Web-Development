@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+        <style>
+.container
+{
+        margin: 10px;
+        background-color: chartreuse;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content:center;
+    }
+    
+    .container-item{
+       width: 70px;
+         line-height: 50px;
+         background: red;
+        margin: 10px;
+         text-align: center;
+        font-size: 35px;
+        color: white;
+    }
+        </style>
+</head>
+
+<body>
+<!--the style order will change the order of the containers-->
+<!--the style flex-grow will increase the size of the container-->
+<!--when we give the flex-shrink value to 0 , then its size will not change 
+even when resizing the window size-->
+<div class="container">
+    <div class="container-item" style="order: 4; flex-grow: 0; flex-shrink: 1; flex-basis: 100px;">A</div>
+    <div class="container-item" style="order: 3; flex-grow: 0; flex-shrink: 1; flex-basis: 100px;">B</div>
+    <div class="container-item" style="order: 2; flex-grow: 5; flex-shrink: 0; flex-basis: 100px;">C</div>
+    <div class="container-item" style="order: 1; flex-grow: 0; flex-shrink: 1; flex-basis: 100px;">D</div>
+    <div class="container-item" style="order: 5; flex-grow: 1; flex-shrink: 0; flex-basis: 100px;">E</div>
+</div>
+<!--default value of grow=0 and default value fo shrink=1-->
+<!--shorthand property:  flex: grow shrink basis-->
+
+<div class="container">
+    <div class="container-item" style="order: 4; flex:1 1 100px;">A</div>
+    <div class="container-item" style="order: 3; flex:1 1 100px;">B</div>
+    <div class="container-item" style="order: 2; flex:0 1 200px;">C</div>
+    <div class="container-item" style="order: 1; flex:3 0 100px;">D</div>
+    <div class="container-item" style="order: 5; flex:4 0 100px;">E</div>
+</div>
+</body>
+
+</html>

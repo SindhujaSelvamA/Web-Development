@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+        body
+        {
+        margin: 0;
+        padding: 0;
+       height: 100vh;
+      display: flex;
+         align-items: center;
+       justify-content: center;
+       background-color: black;
+        }
+        #square{
+            width: 200px;
+            height:200px;
+            background: red;
+            border:2px solid black;
+            animation-name:rotate-square;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            animation-play-state:running;
+            
+             }
+
+             @keyframes rotate-square{
+                 0%{
+                     transform:Rotate(5deg);
+                     background:yellow;
+                 }
+                 5%{
+                     transform: rotate(10deg);
+                     background: orange;
+                 }
+                 15%{
+                     transform:rotate(15deg);
+                     background:orangered;
+                 }
+                20%{
+                     transform: rotate(20deg);
+                     background: red;
+                 }
+                 25%{
+                     transform: rotate(25deg);
+                     background: orchid;
+                 }
+                30%{
+                     transform: rotate(30deg);
+                     background: purple;
+                 }
+                 35%{
+                     transform: rotate(35deg);
+                     background: rebeccapurple;
+                 }
+                 40%{
+                     transform: rotate(40deg);
+                     background: skyblue;
+                 }
+                 45%{
+                     transform: rotate(45deg);
+                     background: blue;
+                 }
+                 50%{
+                     transform: rotate(50deg);
+                     background: springgreen;
+                 }
+                 55%{
+                     transform: rotate(55deg);
+                     background: green;
+                 }
+                 60%{
+                     transform: rotate(60deg);
+                     background: sienna;
+                 }
+                 65%{
+                     transform: rotate(65deg);
+                     background: yellowgreen;
+                 }
+                 70%{
+                     transform: rotate(70deg);
+                     background: indianred;
+                 }
+                 75%{
+                     transform: rotate(75deg);
+                     background: snow;
+                 }
+                 80%{
+                     transform: rotate(80deg);
+                     background:gold;
+                 }
+                 85%{
+                     transform: rotate(85deg);
+                     background: hotpink;
+                 }
+                 90%{
+                     transform: rotate(90deg);
+                     background: grey;
+                 }
+                 95%{
+                     transform: rotate(95deg);
+                     background:goldenrod;
+                 }
+
+                 100%{
+                     transform: rotate(100deg);
+                     background: red;
+                 }
+             }
+    </style>
+
+</head>
+
+<body>
+<div id="square">
+
+</div>
+</body>
+
+</html>

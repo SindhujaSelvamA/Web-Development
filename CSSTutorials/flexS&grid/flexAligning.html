@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+            .container
+{
+      height: 500px;
+            margin: 10px;
+              background-color: chartreuse;
+              display: flex;
+              flex-direction: row;
+           align-items:center;
+           justify-content:center;}
+        .container-item{
+         width: 70px;
+         line-height: 50px;
+         background: red;
+        margin: 10px;
+         text-align: center;
+        font-size: 35px;
+        color: white;
+        
+}
+    </style>
+</head>
+
+<body>
+<h2></h2>
+<div class="container" >
+    <div class="container-item" style="order: 4; flex:1 1 100px; align-self:center ;">A</div>
+    <div class="container-item" style="order: 3; flex:1 1 100px; align-self:flex-end ;">B</div>
+    <div class="container-item" style="order: 2; flex:1 1 100px; align-self: center;">C</div>
+    <div class="container-item" style="order: 1; flex:1 1 100px; align-self:flex-start ;">D</div>
+    <div class="container-item" style="order: 5; flex:1 1 100px; align-self:flex-start ;">E</div>
+</div>
+</body>
+
+</html>
