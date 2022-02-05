@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>fontawesome icons</title>
+    <script src="https://kit.fontawesome.com/e15cbb259d.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,50%);
+        }
+       
+        body ul li{
+            display: inline-block;
+             }
+       .icons ul li div i{
+           
+           padding: 10px;
+           margin: 5px;
+            }
+.icons ul li div{
+     background: rgb(48, 42, 42);
+    box-shadow: inset 10px 10px 15px #ffffff, inset -10px -10px -15px rgb(255, 255, 255);
+       border-radius: 50%;
+       border-color: none;
+  
+}
+.icons ul li div:hover{
+     /*   width: 10px;*/
+          width: 200px;
+          fill: transparent;
+          filter: drop-shadow(0 20px 10px #000);
+          cursor: pointer;
+          border: 1px solid black;
+          border-radius:15px;
+}
+
+ .icons ul li span{
+     display: none;
+ }
+ .icons ul li div:hover span{
+     display: inline-block;
+     color: white;
+     font-size: large;
+     font-weight: 500;
+     position: absolute;
+     top: 40%;
+     left: 40%;
+     bottom: 60%;
+     align-items: center;
+     justify-content: center;
+ }
+    </style>
+
+</head>
+
+<body>
+    <div class="icons">
+    <ul>
+        <li><div  style='color: #1DA1F2';>
+            <i class="fab fa-twitter fa-2x"></i><span>twitter</span>
+        </div></li>
+
+        <li><div style="color: #4267B2">
+            <i class="fab fa-facebook fa-2x"></i><span>facebook</span>
+        </div></li>
+
+        <li><div style="color: red">
+            <i class="fab fa-google fa-2x"></i><span>google</span>
+        </div></li>
+
+
+        <li><div style="color: #25D366">
+            <i class="fab fa-whatsapp fa-2x"></i><span>whatsapp</span>
+        </div></li>
+
+    </ul>
+
+    </div>
+
+</body>
+
+
+</html>
