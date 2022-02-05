@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+}
+
+ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu{
+    width: 90%;
+    background: linear-gradient(#1ebdbe, #107677);
+    border: 1px solid #107677;
+    margin: 60px auto;
+    border-radius: 5px;
+     box-shadow: -3px -3px 7px #ffffff73,
+               2px 2px 5px rgba(94,104,121,0.288);
+}
+ .menu:before, .menu:after{
+   content: "";
+   display: block;
+ }
+ .menu:after{
+         clear: both;
+ }
+ .menu li{
+     float: left;
+     position: relative;
+ }
+
+ .menu a{
+     float: left;
+     padding: 12px 30px;
+     color: #fff;
+     text-decoration: none;
+     font: bold 12px arial;
+ }
+
+ .menu ul{
+     margin: 2px 0 0 0;
+     opacity: 0;
+     visibility: hidden;
+     position: absolute;
+     top: 38px;
+     left: 0;
+     z-index: 1;
+     background: linear-gradient(#1ebdbe, #107677);
+     box-shadow: 0 -1px 0 rgba(255,255,255,.3);
+    
+ }
+
+ .menu li:hover>ul
+{
+     visibility: visible;
+     margin: 0;
+     opacity: 1;
+ }
+
+ .menu ul ul{
+     top: 0;
+     left: 100px;
+     margin: 0 0 0 0px;
+     box-shadow: 0 -1px 0 rgba(255,255,255,.3);
+ }
+
+ .menu ul a{
+     padding: 10px;
+     width: 130px;
+     display: block;
+     white-space: nowrap;
+     float: none;
+ }
+ .menu ul a:hover{
+     background: linear-gradient(#1ebdbe,#107677);
+     
+ }
+ .menu ul li:first-child>a:after{
+     content:'';
+     position: absolute;
+     
+ }
+
+    </style>
+</head>
+
+<body>
+<nav class="menu-bar">
+
+<ul class="menu">
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">ABOUT</a></li>
+    <li><a href="#">WEB DEVELOPMENT COURSES</a>
+    
+        <ul>
+            <li><a href="#">FrontEnd</a>
+                
+                <ul>  <li><a href="#">HTML</a></li>
+                      <li><a href="#">CSS</a></li>
+                      <li><a href="#">Bootstrap</a></li>
+                      <li><a href="#">Javascript</a></li>
+                      <li><a href="#">Jquery</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">BackEnd</a>
+
+                <ul>  <li><a href="#">NodeJs</a></li>
+                      <li><a href="#">php</a></li>
+                </ul>
+             </li>
+ .           
+            <li><a href="#">DataBases</a>
+
+                <ul>   <li><a href="#">MongoDB</a></li>
+                       <li><a href="#">SQL</a></li>
+                       <li><a href="#">MYSQL</a></li>
+                       <li><a href="#">MS-SQL</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    <li><a href="#">CONTACT</a></li>
+</ul>
+
+</nav>
+</body>
+
+</html>
